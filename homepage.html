@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- css-->
+<style>{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product button {
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+</style>
+<!--css ends-->
+<body>
+    <header>
+        <h1>Welcome to Our Product Store</h1>
+    </header>
+    <main>
+        <section class="product-list">
+            <div class="product">
+                <img src="https://img.freepik.com/free-vector/beauty-accessories-set_23-2147811431.jpg?w=740&t=st=1723458918~exp=1723459518~hmac=f19ac7ed091abec5958323c1f347bb555414702d29673f191cb632ab1bf1653f" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$199.12</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://img.freepik.com/free-photo/minimal-arrangement-beauty-products_23-2148961322.jpg?w=996&t=st=1723459190~exp=1723459790~hmac=fa1a537b94307b3b4c09bb35263dc1e2cb9ceef47d8b768385feaa3b96e6fc2f" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$295.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+             <div class="product">
+                <img src="https://img.freepik.com/free-photo/woman-shopping-thrift-store_23-2150952350.jpg?t=st=1723462099~exp=1723465699~hmac=e2d2d5979ab31eb4a698e17d0ef7107f25fbaaf26fb2df5241db1f6dae00293d&w=996 "alt="product 3" >
+                <h2>product 3</h2>
+                <p>$399.12</p>
+                <button>Add to Cart</button>
+             </div>
+             <div class="product">
+                <img src="https://img.freepik.com/free-photo/woman-shopping-thrift-store_23-2150952350.jpg?t=st=1723462099~exp=1723465699~hmac=e2d2d5979ab31eb4a698e17d0ef7107f25fbaaf26fb2df5241db1f6dae00293d&w=996 "alt="product 3" >
+                <h2>product 4</h2>
+                <p>$399.12</p>
+                <button>Add to Cart</button>
+             </div>
+             <div class="product">
+                <img src="https://img.freepik.com/free-photo/woman-shopping-thrift-store_23-2150952350.jpg?t=st=1723462099~exp=1723465699~hmac=e2d2d5979ab31eb4a698e17d0ef7107f25fbaaf26fb2df5241db1f6dae00293d&w=996 "alt="product 3" >
+                <h2>product 5</h2>
+                <p>$399.12</p>
+                <button>Add to Cart</button>
+             </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
