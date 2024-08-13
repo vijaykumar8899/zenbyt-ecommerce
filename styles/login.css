@@ -1,0 +1,10 @@
+table,th,td{
+    border:5px solid black;
+    border-collapse:collapse;
+  }
+  td{
+    padding:5px;
+  }
+  th{
+  text-align:left;
+}
