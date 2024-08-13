@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#footer {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    background-color: #f4f4f4; /* Adjust background color as needed */
+    gap: 20px; /* Space between the divs */
+}
+
+#first, #second {
+    max-width: 300px; /* Limit the width of each column if needed */
+}
+
+#first h3, #second h3, #three h3 {
+    margin-top: 0;
+}
+
+#second {
+    text-align: right;
+    color: black;
+}
+#three {
+   
+    color:black;
+    max: width 50px;
+}
