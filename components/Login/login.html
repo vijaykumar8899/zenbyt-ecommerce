@@ -1,31 +1,77 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Home Page</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../../styles/login.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/global.css">
 </head>
- <body>
-   <form>
-    <center>
-    <table>
-    <p style="text-align:center;"><b>Login</b></p>
-    <tr>
-    <td><label for="phone">Phone Number:</label></td>
-    <td><input type="tel" id="phone" name="phone" required></td>
-    </tr>
-    <tr>
-    <td><label for="password">Password:</label></td>
-    <td><input type="password" id="password" name="password" required></td>
-    </tr>
-    </table>
-    <tr>
-    <td colspan="4"><input type="submit" value="Login"></td>
-    </tr>
-  
-    
- </center>
-   </form>
- </body>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="../../assets/Images/LOGO1.png" alt="E-Shop Logo"></a>
+            </div>
+            <h1 id="mainTitle">Zenbyt-Ecommerce</h1>
+
+            <!-- Navigation Menu -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <form id="loginForm">
+        <center>
+            <table>
+                <p style="text-align:center;"><b>Login</b></p>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+            </table>
+            <tr>
+                <td colspan="4"><input type="submit" value="Login"></td>
+            </tr>
+        </center>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Static validation for demo
+            const phoneInput = document.getElementById('phone').value;
+            const passwordInput = document.getElementById('password').value;
+
+            const validPhone = "123";
+            const validPassword = "test";
+
+            if (phoneInput === validPhone && passwordInput === validPassword) {
+                window.location.href = "../HomePage/homepage.html"; // Redirect to homepage
+            } else {
+                alert("Invalid phone number or password. Please try again.");
+            }
+        });
+    </script>
+</body>
 </html>

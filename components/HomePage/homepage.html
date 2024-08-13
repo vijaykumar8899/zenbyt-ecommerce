@@ -5,18 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Home Page</title>
     <link rel="stylesheet" href="../../styles/homepage.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Product Store</h1>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="../../assets/Images/LOGO1.png" alt="E-Shop Logo"></a>
+            </div>
+            <h1 id="mainTitle">Zenbyt-Ecommerce</h1>
+
+            <!-- Navigation Menu -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../Cart/cart.html">Cart</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+
+            <!-- Icons -->
+            <!-- <div class="header-icons">
+                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+                <a href="profile.html"><i class="fa fa-user"></i></a>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            </div> -->
+        </div>
     </header>
     <main>
+        <h1>Welcome to Our Product Store</h1>
         <section class="product-list">
             <div class="product">
                 <img src="https://img.freepik.com/free-vector/beauty-accessories-set_23-2147811431.jpg?w=740&t=st=1723458918~exp=1723459518~hmac=f19ac7ed091abec5958323c1f347bb555414702d29673f191cb632ab1bf1653f" alt="Product 1">
                 <h2>Product 1</h2>
                 <p>$199.12</p>
-                <button>Add to Cart</button>
+                <button onclick="navigateToCartPage()">Add to Cart</button>
             </div>
             <div class="product">
                 <img src="https://img.freepik.com/free-photo/minimal-arrangement-beauty-products_23-2148961322.jpg?w=996&t=st=1723459190~exp=1723459790~hmac=fa1a537b94307b3b4c09bb35263dc1e2cb9ceef47d8b768385feaa3b96e6fc2f" alt="Product 2">
@@ -45,6 +79,45 @@
              </div>
         </section>
     </main>
+    <div id="footer">
+        <div id="first">
+            <h3>ONLINE SHOPPING</h3>
+            <p>Men</p>
+            <p>Women</p>
+            <p>Kids</p>
+            <p>Home & Living</p>
+            <p>Beauty</p>
+            <p>Gift Cards</p>
+            <p>Myntra Insider</p>
+            <h3>USEFUL LINKS</h3>
+            <p>Blog</p>
+            <p>Careers</p>
+            <p>Site Map</p>
+            <p>Corporate Information</p>
+            <p>White Hat</p>
+            <p>Clear Trip</p>
+        </div>
+        <div id="second">
+            <h3>CUSTOMER POLICIES</h3>
+            <p>Contact Us</p>
+            <p>FAQ</p>
+            <p>T&C</p>
+            <p>Terms Of Use</p>
+            <p>Track Orders</p>
+            <p>Shipping</p>
+            <p>Cancellation</p>
+            <p>Returns</p>
+            <p>Privacy Policy</p>
+            <p>Grievance Officer</p>
+        </div>
+    
+        <div id="three">
+            <h3>EXPERIENCE MYNTRA APP ON MOBILE</h3>
+            <!-- <a href="./footerImage.svg"> -->
+                <img src="../../assets/Images/" alt="footerImage" style="width:100px; height:100px;" >
+        <!-- <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.svgrepo.com%2Fsvg%2F303139%2Fgoogle-play-badge-logo&psig=AOvVaw0BbyAW48Ojq4Dzw0k2OlL_&ust=1723551283670000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDuxIG374cDFQAAAAAdAAAAABAE"></a> -->
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
